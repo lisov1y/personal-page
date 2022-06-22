@@ -20,7 +20,7 @@
   scrollbar-width: none;  /* Firefox */
 }
 
-#intro {
+#intro, #contact {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -32,10 +32,6 @@
   background-color: #d4eff7;
   position: relative;
   border-bottom: 1px solid #23d5ab;
-}
-
-#contact {
-  background-color: #d3f8ef;
 }
 
 section {
@@ -123,6 +119,10 @@ ul li {
   border-radius:  300% 15%;
   position: relative;
   transform: rotate(45deg);
+  box-shadow:
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px #f0f,        /* outer left magenta */
+    10px 0 80px #0ff;         /* outer right cyan */
 }
 
 .iris {
@@ -137,16 +137,9 @@ ul li {
   border-radius: 100%;
 }
 
-.contact-card {
-  border: 1px solid #23d5ab;
-  background-color: #65e6c8;
-  border-radius: 7%;
-  box-shadow: 5px 5px 10px #888888;
-}
-
 .contact-link, .link {
   text-decoration: none;
-  color: #23a6d5;
+  color: #fff;
 }
 
 @media screen and (max-width: 400px) {
