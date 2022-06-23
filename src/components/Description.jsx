@@ -21,7 +21,6 @@ export default function Description() {
       <img id='profile-pic' src={ProfilePic} alt="Mikhail's Picture" />
       <div className='px-3 px-md-0'>
         <div className='mt-sm-4 mt-2 mb-0'>{renderAnimatedText()}</div>
-        <p className='text-muted d-none d-sm-block'>(Like solving algorithms and solving the problem where to eat tonight)</p>
       </div>
     </div>
   )
