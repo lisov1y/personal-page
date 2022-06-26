@@ -26,7 +26,6 @@
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   color: #fff;
-  border-bottom: 1px solid #23a6d5;
 }
 
 h1 span {
@@ -37,7 +36,14 @@ h1 span {
 #about {
   background-color: #d4eff7;
   position: relative;
-  border-bottom: 1px solid #23d5ab;
+}
+
+#experience {
+  background-color: #d3f8ef;
+}
+
+#experience a {
+  color: black;
 }
 
 section {
@@ -46,17 +52,7 @@ section {
   scroll-snap-align: center;
 }
 
-@keyframes gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
-}
+
 
 #profile-pic {
   position: relative;
@@ -117,9 +113,21 @@ ul li {
   z-index: 0;
 }
 
-.work-img {
+.project-column {
+  font-size: 24px;
+}
+
+.project-description h2 {
+  font-weight: 600;
+}
+
+.project-description p {
+  font-size: 24px;
+}
+
+.project-img {
   width: 550px;
-  height: 500px;
+  height: 300px;
 }
 
 .eye {
@@ -153,14 +161,60 @@ ul li {
   color: #fff;
 }
 
-@media screen and (max-width: 400px) {
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 1131px) {
   #profile-pic {
     height: 175px;
     width: 175px;
   }
 
   .description {
-    font-size: 1.2rem;
+    font-size: 18px;
+  }
+
+  .project-column {
+    font-size: 18px;
+  }
+  
+  .project-description h2 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .project-description p {
+    font-size: 18px;
+  }
+
+  .project-img {
+    width: 300px;
+    height: 175px;
+  }
+}
+
+@media screen and (max-width: 608px) {
+  #profile-pic {
+    height: 150px;
+    width: 150px;
+  }
+
+  .description {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .skills h3 {
+    font-size: 16px;
     font-weight: 600;
   }
 
@@ -169,8 +223,26 @@ ul li {
     padding-right: 10px;
   }
 
+  .project-column {
+    font-size: 16px;
+  }
+  
+  .project-description p {
+    font-size: 16px;
+  }
+
+  .project-img {
+    width: 300px;
+    height: 180px;
+  }
+
   .eye {
     width: 200px;
     height: 200px;
+  }
+
+  .iris {
+    height: 75px;
+    width: 75px;
   }
 }
