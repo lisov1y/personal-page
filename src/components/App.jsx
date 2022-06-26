@@ -6,7 +6,7 @@ import Experience from "./Experience";
 function App() {
 
   return (
-    <main className='scroll-container'>
+    <main>
       <Intro />
       <About />
       <Experience />

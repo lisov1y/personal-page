@@ -10,7 +10,7 @@ export default function Description() {
     const parsedText = [];
     for (let i = 0; i < dividedText.length; i++) {
       parsedText.push(
-        <motion.div key={i} whileHover={{ y: -10 }} className='d-inline-block pe-2'>{dividedText[i]}</motion.div>
+        <motion.div key={i} whileHover={{ y: -10 }} className='d-inline-block pe-1'>{dividedText[i]}</motion.div>
       );
     }
     return parsedText;

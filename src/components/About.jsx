@@ -5,9 +5,9 @@ import AnimatedBox from './AnimatedBox'
 
 export default function About() {
   return (
-    <section id='about'>
-      <h2 className='text-center py-sm-5 pt-2 pb-3'>About Me</h2>
-      <div className='row d-flex justify-content-sm-around h-75'>
+    <section id='about' className='min-vh-100'>
+      <h2 className='text-center py-sm-5 py-3 fw-bold'>About Me</h2>
+      <div className='row d-flex justify-content-sm-around my-auto'>
         <Description />
         <Skills />
       </div>
