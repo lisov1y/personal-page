@@ -2,12 +2,13 @@ import React from 'react';
 import Eye from './Eye';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
     <section id='contact'>
-      <h2 className='text-center py-sm-5 py-3 fw-bold'>Contact Me</h2>
-      <div className='d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-around align-items-center'>
+      <motion.h2 className='text-center py-sm-5 py-3 fw-bold' initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 0.5}}}>Contact Me</motion.h2>
+      <motion.div className='d-flex flex-column-reverse flex-lg-row justify-content-center justify-content-lg-around align-items-center' initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 0.5}}}>
         <div className='mt-5 p-5'>
           <p className='fs-3 fw-bold mb-1'>Have a question?</p>
           <p className='fs-3 fw-bold mb-1'>Or want to work together?</p>
@@ -19,7 +20,7 @@ export default function Contact() {
           </div>
         </div>
         <Eye />
-      </div>
+      </motion.div>
     </section>
   )
 }

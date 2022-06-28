@@ -22,7 +22,7 @@ export default function Eye() {
     <div className='eye'>
       <motion.div 
       animate={{ y: generateDirections(), x: generateDirections() }} 
-      transition={{ repeat: Infinity, duration: 25}}
+      transition={{ repeat: Infinity, duration: 30}}
       whileHover={{scale: 1.5}}
       className='iris m-0 p-0'>
       </motion.div>

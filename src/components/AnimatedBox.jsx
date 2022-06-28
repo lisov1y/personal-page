@@ -17,7 +17,6 @@ export default function AnimatedBox() {
   const randPos = () => randomNumGen(10, 90);
   const randRepeatDelay = () => randomNumGen(10, 20);
 
-
   function renderCubes() {
     const cubes = [];
     for (let i = 0; i < amountOfCubes; i++) {
@@ -28,8 +27,8 @@ export default function AnimatedBox() {
         <motion.div
         key={i}
         style={{width: size, height: size, left: randPos() + '%', top: randPos() + '%'}}
-        animate={{scale: [1, 2, 2, 1, 1], rotate: [0, 0, 270, 270, 0], borderRadius: ["20%", "20%", "50%", "50%", "20%"]}} 
-        transition={{ repeat: Infinity, repeatDelay: randRepeatDelay()}} className='animated-box position-absolute'>
+        animate={{scale: [1, 2, 1]}} 
+        transition={{ repeat: Infinity, repeatDelay: randRepeatDelay(), duration: 5}} className='animated-circle position-absolute'>
         </motion.div>
       );
     }

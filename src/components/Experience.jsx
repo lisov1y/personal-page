@@ -68,9 +68,9 @@ export default function Experience() {
 
   return (
     <section id='experience' className='min-vh-100'>
-      <h2 className='text-center py-sm-5 py-3 fw-bold'>Experience</h2>
+      <motion.h2 className='text-center py-sm-5 py-3 fw-bold' initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 0.5}}}>Experience</motion.h2>
       <div className='row d-flex flex-md-row flex-column'>
-        <div className='col-md-4 col-12 d-flex flex-md-column justify-content-md-start justify-content-around project-column'>
+        <motion.div className='col-md-4 col-12 d-flex flex-md-column justify-content-md-start justify-content-around project-column' initial={{x: -300}} whileInView={{x: 0, transition: {duration: 0.5}}}>
           <div className='ms-md-5'>
             <p className='fw-bold fs-3'>Work Experience</p>
             <ul>
@@ -87,12 +87,12 @@ export default function Experience() {
               <motion.li onClick={handleClick} style={project.id === 'tindog' ? selected : ''} whileHover={{scale: 1.2}} whileTap={{scale: 0.9}} id='tindog' className='fs-4'>Tindog</motion.li>
             </ul>
           </div>
-        </div>
-        <div className='col-md-8 col-12 d-flex flex-column align-items-center project-description text-center pe-md-5'>
+        </motion.div>
+        <motion.div className='col-md-8 col-12 d-flex flex-column align-items-center project-description text-center pe-md-5' initial={{x: 300}} whileInView={{x: 0, transition: {duration: 0.5}}} layout transition={{ duration: 0.3 }}>
           <h2 className='fw-bold'><a href={project.url} target='_blank'>{project.title}</a></h2>
           {project.img ? <img className='project-img my-md-5 my-3' src={project.img} alt='project-img' /> : <h2 className='my-5'>🚧Image is under construction...🚧</h2>}
           <p className='px-1 fs-4'>{project.description}</p>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

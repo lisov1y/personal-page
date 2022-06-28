@@ -17,11 +17,13 @@ export default function Description() {
   }
 
   return (
-    <div className='col-md-5 col-12 text-center description d-flex flex-column justify-content-center align-items-center mb-3 mb-sm-0'>
-      <img id='profile-pic' src={ProfilePic} alt="Mikhail's Picture" />
+    <motion.div className='col-md-5 col-12 text-center description d-flex flex-column justify-content-center align-items-center mb-3 mb-sm-0' initial={{x: -300}} whileInView={{x: 0, transition: {duration: 0.5}}} >
+      <div className='img-circle d-flex justify-content-center align-items-center'>
+        <motion.img id='profile-pic' src={ProfilePic} alt="Mikhail's Picture" whileTap={{scale: 0.7}} whileHover={{x: 20, y: 20}} />
+      </div>
       <div className='px-3 px-md-0'>
         <div className='mt-sm-4 mt-2 mb-0'>{renderAnimatedText()}</div>
       </div>
-    </div>
+    </motion.div>
   )
 }
