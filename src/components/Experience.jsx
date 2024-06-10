@@ -47,7 +47,7 @@ export default function Experience() {
           </div>
         </motion.div>
         <motion.div className='col-md-8 col-12 d-flex flex-column align-items-center project-description text-center pe-md-5' initial={{x: 300}} whileInView={{x: 0, transition: {duration: 0.5}}} layout transition={{ duration: 0.3 }}>
-          <h2 className='fw-bold'><a href={project.url} target='_blank'>{project.title}</a></h2>
+          <h2 className='fw-bold'><a href={project.url} target='_blank' rel="noreferrer">{project.title}</a></h2>
           {project.img ? <img className='project-img my-5' src={project.img} alt='project-img' /> : <h2 className='my-5'>No Image</h2>}
           <p className='px-1 fs-4 mb-5'>{project.description}</p>
         </motion.div>

@@ -14,9 +14,9 @@ export default function Contact() {
           <p className='fs-3 fw-bold mb-1'>Or want to work together?</p>
           <p className='fs-3 fw-bold'>Get in touch!</p>
           <div className='d-flex justify-content-around mt-5'>
-            <a className='link' href='https://www.linkedin.com/in/mikhail-stupnikov-638459194/' target='_blank'><FontAwesomeIcon icon={faLinkedinIn} size='2x' /></a>
-            <a className='link' href='https://github.com/lisov1y' target='_blank'><FontAwesomeIcon icon={faGithub} size='2x' /></a>
-            <a className='link' href='https://www.instagram.com/l1soviy/' target='_blank'><FontAwesomeIcon icon={faInstagram} size='2x' /></a>
+            <a className='link' href='https://www.linkedin.com/in/mikhail-stupnikov-638459194/' target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faLinkedinIn} size='2x' /></a>
+            <a className='link' href='https://github.com/lisov1y' target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faGithub} size='2x' /></a>
+            <a className='link' href='https://www.instagram.com/l1soviy/' target='_blank' rel="noreferrer"><FontAwesomeIcon icon={faInstagram} size='2x' /></a>
           </div>
         </div>
         <Eye />
