@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Description() {
 
   function renderAnimatedText() {
-    const text = `It's me! I'm a passionate everyday learner who loves to work on the design and frontend things! I have two years of overall Front-End experience developing applications and designing mockups. Also I'm a decent problem solver!`;
+    const text = `I am Mikhail Stupnikov, an experienced SDET with over five years in web application testing and automation. Skilled in creating robust automation frameworks and integrating CI/CD pipelines, I am passionate about exploring new technologies and continuously enhancing my expertise.`;
     const dividedText = text.split(' ');
     const parsedText = [];
     for (let i = 0; i < dividedText.length; i++) {
